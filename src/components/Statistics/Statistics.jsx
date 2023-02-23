@@ -3,7 +3,7 @@ import { BsEmojiNeutral, BsEmojiHeartEyes, BsEmojiFrown } from 'react-icons/bs';
 import { BiAbacus, BiBarChartAlt2 } from 'react-icons/bi';
 import css from 'components/Statistics/statistics.module.css';
 
-const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
+const Statistics = ({ good, neutral, bad, total, percentage }) => {
   return (
     <ul className={css.list}>
       <li className={css.item}>
@@ -27,7 +27,7 @@ const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
         <BiBarChartAlt2 className={css.icon} />
         <p className={css.text}>
           Positive Feedback:{' '}
-          {total === 0 ? '0' : Math.round(positivePercentage)}%
+          {total === 0 ? '0' : Math.round(percentage)}%
         </p>
       </li>
     </ul>
@@ -40,6 +40,6 @@ Statistics.propTypes = {
   good: PropTypes.number.isRequired,
   neutral: PropTypes.number.isRequired,
   bad: PropTypes.number.isRequired,
-  total: PropTypes.func.isRequired,
-  onLeaveFeedback: PropTypes.func.isRequired,
+  total: PropTypes.number.isRequired,
+  percentage: PropTypes.number.isRequired,
 };
