@@ -1,0 +1,19 @@
+.list,
+.item {
+  display: flex;
+  gap: 8px;
+}
+
+.list {
+  flex-direction: column;
+}
+
+.text {
+  font-size: 18px;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  color: tomato;
+}

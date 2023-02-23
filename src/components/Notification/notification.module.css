@@ -1,0 +1,15 @@
+.box {
+  display: flex;
+  gap: 8px;
+}
+
+.text {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  color: tomato;
+}

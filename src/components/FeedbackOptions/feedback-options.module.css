@@ -1,0 +1,22 @@
+.list {
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  padding: 4px 12px;
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid tomato;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: transform 300ms linear;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: tomato;
+  transform: scale(1.1);
+}
